@@ -83,7 +83,7 @@ int BST<T>::searchNode(Node* root, T _v) {
     if (root == nullptr) {
         return 0;
     } else if (root->value == _v) {
-        return root->count;
+        return root->cnt;
     } else if (root->value > _v) {
         return searchNode(root->left, _v);
     } else {
